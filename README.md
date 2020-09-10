@@ -1,5 +1,5 @@
 # api.criterion.dev
-The official support channel for https://api.criterion.dev
+The official support channel for [https://api.criterion.dev](https://api.criterion.dev) and [https://criterion.dev](https://criterion.dev)
 
 ### About
 Criterion.dev is a service for tracking the performance of an application.  The inspiration for this service comes from classic technical debt scenarios where as a project is enhanced over time and performance regresses simply because it is not being monitored.
