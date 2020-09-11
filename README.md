@@ -1,4 +1,4 @@
-# api.criterion.dev
+# criterion.dev
 The official support channel for [https://api.criterion.dev](https://api.criterion.dev) and [https://criterion.dev](https://criterion.dev)
 
 ### About
