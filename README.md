@@ -20,12 +20,10 @@ Criterion.dev aims to provide a service that developers can add to their CI/CD f
 Start by following [this guide](https://bheisler.github.io/criterion.rs/book/getting_started.html), to set up your project with benchmarks
 In your projects root directory, these commands will run the benchmarks, and upload the measurements to crition.dev.
 
-`cargo bench -- --verbose --noplot --save-baseline criterion.dev.temp`
+`cargo bench -- --verbose --noplot`
 ```
-find $(find . -type d -name criterion.dev.temp) -name raw.csv && \
-curl -F "raw.csv=@$(find $(find . -type d -name criterion.dev.temp) -name raw.csv)" \
--H "Content-Type: multipart/form-data" \
-https://api.criterion.dev/${{ github.repository }}/measurements?token=${{ secrets.CRITERION_TOKEN }}
+export CRITERION_TOKEN="token"
+bash <(curl -s https://criterion.dev/bash)
 ```
 
 ### Issues and Feature Requests
